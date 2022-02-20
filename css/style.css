@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+.cartao {
+    background-color: var(--very-dark-blue-card);
+    border-radius: 20px;
+    width: 74%;
+    max-width: 300px;
+    padding: 6%;
+}
+
+.cartao .produto-foto {
+    position: relative;
+}
+
+.cartao .produto-foto .imagem-view {
+    background-color: rgba(0, 255, 255, 0.6);
+    border-radius: 10px;
+    height: 99%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+.cartao .produto-foto .imagem-view:hover {
+    opacity: 1;
+}
+
+.cartao .produto {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.cartao .produto-nome {
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 10% 0% 5%;
+}
+
+.cartao .produto-nome:hover {
+    color: cyan;
+}
+
+.cartao .produto-descricao {
+    color: var(--soft-blue);
+    font-size: .9em;
+    line-height: 1.6em;
+    margin-bottom: 6%;
+}
+
+.cartao .preco-prazo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 6%;
+    border-bottom: 1px solid var(--very-dark-blue-line);
+}
+
+.cartao .preco {
+    color: cyan;
+    font-size: .9em;
+    margin-left: 6%;
+}
+
+.cartao .preco::before {
+    content: url("../nft-preview-card-component-main/images/icon-ethereum.svg");
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.cartao .prazo {
+    color: var(--soft-blue);
+    font-size: .9em;
+}
+
+.cartao .prazo::before {
+    content: url("../nft-preview-card-component-main/images/icon-clock.svg");
+    top: 0;
+    left: 66%;
+    position: absolute;
+}
+
+.cartao .perfil {
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.cartao .perfil .avatar {
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 5%;
+}
+
+.cartao .perfil .credito {
+    color: var(--soft-blue);
+    font-size: .9em;
+}
+
+.cartao .perfil .credito .criador {
+    color: white;
+}
+
+.cartao .perfil .credito .criador:hover {
+    color: cyan;
+}
+
+@media screen and (min-width: 1440px) {
+    .cartao {
+        padding: 1.6%;
+    }
+}
